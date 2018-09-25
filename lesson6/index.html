@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0,
+         maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+  <body>
+    <div class="hamburger-top">
+
+    </div>
+    <div class="hamburger-size">
+
+      <input type="radio" class="hamburger__input" name="size"
+              onchange="onSizeToggle('small')">
+      smal<br>
+      <input type="radio" class="hamburger__input" name="size"
+              onchange="onSizeToggle('large')"> Large<br>
+      <div class="hamburger-staff">
+        <input type="radio" class="hamburger-staff__input" name="size"
+               onchange="onStuffToggle('cheese')" checked> Cheese <br>
+        <input type="radio" class="hamburger-staff__input" name="size"
+               onchange="onStuffToggle('salad')" checked> Salad <br>
+        <input type="radio" class="hamburger-staff__input" name="size"
+               onchange="onStuffToggle('potato')" checked> Potato <br>
+      </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="cls.js"></script>
+    <script src="js/hamburger.js"></script>
+  </body>
+</html>

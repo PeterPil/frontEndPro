@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: darkred;
+  opacity: 0.8;
+}
+
+.hamburger-size {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  opacity: 1;
+  align-content: center;
+}
+
+.hamburger {
+  background-image: url("../img/veggie-burger.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 0;
+
+
+}
+
