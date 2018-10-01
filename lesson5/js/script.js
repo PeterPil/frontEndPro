@@ -1,6 +1,7 @@
 function Hamburger(size, stuffing) {
   if (arguments.length < 2) {
-    console.log("Need more arguments")
+    console.log("Need more arguments");
+
   }
   if (Hamburger.allowSizes.indexOf(size) < 0) {
     console.log("invalid size");
@@ -67,13 +68,13 @@ Hamburger.prototype.removeTopping = function (topping){
   if (arguments.length != 1) {
     console.log("Need only one argument");
   }
-  if (Hamburger.allowToppings.indexOf(topping) < 0)
-  {
+  if (Hamburger.allowToppings.indexOf(topping) < 0) {
     console.log("Invalid topping");
   }
   for (let i = 0; i < this.getToppings().length; i++) {
     if (topping === this.getToppings()[i]) {
       this.toppings.splice(i,1);
+      break;
       // delete  this.toppings[i];
     }
   }
@@ -136,7 +137,8 @@ console.log("Calories: %f", hamburger.calculateCalories());
 // сколько стоит
 console.log("Price: %f", hamburger.calculatePrice());
 // я тут передумал и решил добавить еще приправу
-hamburger.addTopping(Hamburger.TOPPING_SPICE);
+
+
 // А сколько теперь стоит?
 console.log("Price with sauce: %f", hamburger.calculatePrice());
 // Проверить, большой ли гамбургер?
@@ -146,6 +148,7 @@ hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 hamburger.removeTopping(Hamburger.TOPPING_SPICE);
+hamburger.removeTopping(Hamburger.TOPPING_MAYO);
 
 
 
