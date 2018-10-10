@@ -1,0 +1,20 @@
+{
+  "name": "lesson_11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.6.1",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
